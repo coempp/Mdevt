@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".signup"></activity>
+        <activity android:name=".subsignup" />
         <activity android:name=".loggedin" />
         <activity android:name=".forget" />
         <activity

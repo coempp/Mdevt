@@ -5,14 +5,18 @@
     android:id="@+id/tv"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".loggedin">
 
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginTop="320dp"
+       android:src="@drawable/rica_logo0"/>
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:text="U have successfully entered .........work in process"
-        android:textAlignment="viewStart"
-        android:textSize="36dp"
-        android:textStyle="italic" />
-
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="work in progress...."
+        android:layout_gravity="center"/>
 </androidx.appcompat.widget.LinearLayoutCompat>

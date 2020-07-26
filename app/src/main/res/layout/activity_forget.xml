@@ -5,56 +5,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".forget"
-    android:background="#FFE4ECE9"
+    android:padding="20dp"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rica_logo0"
         android:layout_marginTop="20dp"
-        android:padding="40sp"
-        android:text="Mdevt Rica"
-        android:textAlignment="center"
-        android:textSize="36dp"
-        android:textStyle="bold" />
+        android:layout_gravity="center"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_marginTop="10dp"
-        android:text="Please enter your registered mobile number.You will receive a sms that contains a five digit one time password"
-        android:textAlignment="viewStart"
-        android:textSize="25dp"
-        android:textStyle="italic"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Please enter your registered mobile number.You will receive a sms that contains a five digit one time password ."
+        android:textSize="18dp"
+        android:textColor="@color/black"
         />
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:textColorHint="@color/black"
         android:layout_marginTop="20dp"
-        android:background="#E4ECE9">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
 
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Mobile no."
-        android:inputType="phone"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        <EditText
+            android:id="@+id/mob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile no."
+            android:inputType="phone"
+            android:textSize="18sp"
+            android:textStyle="normal" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/login"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
         android:background="@drawable/button_rounded"
         android:text="GENERATE OTP"
-        android:textColor="#FFFFFF"
-        android:textSize="25dp"
-        android:textStyle="bold" />
+        android:textColor="#454242"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:text="Return to Login Screen"
+        android:textColor="#3F51B5"
+        android:onClick="returnLogin"
+        android:textSize="15dp" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
