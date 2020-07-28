@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Mdevt</string>
+    <string name="sign_up">Sign up</string>
     <string name="forgot_pass"><u>Forgot Password? Click here.</u></string>
 </resources>
