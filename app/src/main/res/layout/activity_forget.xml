@@ -63,6 +63,7 @@
                 android:background="@drawable/button_rounded"
                 android:text="GENERATE OTP"
                 android:textColor="@color/black"
+                android:backgroundTint="@color/buttonColor"
                 android:textSize="20dp"
                 />
 

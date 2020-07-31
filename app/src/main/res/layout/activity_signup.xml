@@ -73,13 +73,35 @@
                     android:background="#7988A4"
                     android:drawableStart="@drawable/c"
                     android:inputType="textPassword"
-                    android:maxLength="15"
                     android:textColor="@color/black" />
+
             </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp">
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:maxHeight="20dip"
+                    android:minHeight="20dip"
+                    android:layout_weight="1"
+                    android:progress="0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Weak"
+                    android:id="@+id/password_strength" />
+            </LinearLayout>
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="2dp"
                 android:background="#7988A4"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -100,6 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:text="cancel"
+                android:backgroundTint="@color/buttonColor"
                 android:textColor="@color/black"
                 android:textSize="18dp"
                 android:textStyle="bold" />
@@ -109,10 +132,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Next"
-                android:enabled="false"
+                android:backgroundTint="@color/buttonColor"
                 android:textColor="@color/black"
                 android:textSize="18dp"
                 android:textStyle="bold" />
+
         </LinearLayout>
     </ScrollView>
 
