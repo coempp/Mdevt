@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -67,7 +68,7 @@ public class loginScreen extends AppCompatActivity
                     try {
                         obj.loginUser(loginScreen.this,tv1.getText().toString(),tv2.getText().toString(),token);
                     } catch (JSONException e) {
-                        e.printStackTrace();
+                        Log.e("Some error occured", e.getMessage());
                     }
                 }
 
